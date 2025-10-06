@@ -1,0 +1,5 @@
+/work/INT_Proj
+/work/NA
+/fpga_sw/*
+!fpga_sw/Zynq_INT_sw.c
+!fpga_sw/MB_INT_sw.c
