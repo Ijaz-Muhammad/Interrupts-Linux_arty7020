@@ -3,3 +3,7 @@
 /fpga_sw/*
 !fpga_sw/Zynq_INT_sw.c
 !fpga_sw/MB_INT_sw.c
+/INTlinuxApp/*
+!INTlinuxApp/system-user.dtsi
+!INTlinuxApp/LoadLinux.tcl
+!INTlinuxApp/INTlinuxApp.c

@@ -1,0 +1,21 @@
+/include/ "system-conf.dtsi"
+
+/ {
+    chosen {
+        bootargs = "uio_pdrv_genirq.of_id=generic-uio";
+    };
+};
+
+&amba {
+    btn0_irq: btn0-irq {
+        compatible = "generic-uio";
+        interrupt-parent = <&intc>;
+        interrupts = <0 29 1>;   /* GIC 61 → SPI 29, rising edge */
+    };
+
+    btn1_irq: btn1-irq {
+        compatible = "generic-uio";
+        interrupt-parent = <&intc>;
+        interrupts = <0 30 1>;   /* GIC 62 → SPI 30, rising edge */
+    };
+};
