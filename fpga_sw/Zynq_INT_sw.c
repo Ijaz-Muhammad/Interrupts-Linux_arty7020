@@ -63,10 +63,10 @@ int main()
 void BTN_handler0(void *Callback)
 {
 	Count++;
-	xil_printf("First Interrupt Numbr %d",Count);
+	xil_printf("First Interrupt Numbr %d\n\r",Count);
 }
 void BTN_handler1(void *Callback)
 {
 	Count++;
-	xil_printf("Second Interrupt Numbr %d",Count);
+	xil_printf("Second Interrupt Numbr %d\n\r",Count);
 }
